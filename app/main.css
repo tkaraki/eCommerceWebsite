@@ -1,0 +1,170 @@
+.review-table { 
+    width : 100%;
+    margin: 0px;
+    margin-left: 2%;
+}
+
+.review-title {
+    text-align: center;
+    font-weight: bold;
+    font-style: normal;
+    padding: 5px;
+}
+
+.timestamp {
+    font-style: italic;
+    font-size: smaller;
+}
+
+.review-body {
+    font-style: normal;
+    margin: 15px;
+    padding: 2px;
+    margin-left: 4px;
+    margin-right: 10px;
+}
+
+.item-desc {
+    font-style: normal;
+    margin: 15px;
+    padding: 2px;
+    margin-left: 4px;
+    margin-right: 10px;
+    background-color: rgb(225, 253, 240);
+    width: 90%;
+    margin: 5px;
+    padding: 5px;
+    border: 1.5px solid  rgb(42, 230, 201);
+    border-radius: 2.5px;
+}
+
+.item-info {
+    font-style: normal;
+    margin: 15px;
+    padding: 2px;
+    margin-left: 10px;
+    margin-right: 4px;
+    background-color: rgb(225, 253, 240);
+    width: 30%;
+    margin: 5px;
+    padding: 5px;
+    border: 1.5px solid  rgb(42, 230, 201);
+    border-radius: 2.5px;
+}
+
+.detailedItemButton{                              
+    background-color: rgb(255, 251, 221);
+    border: 1.5px solid rgb(255, 235, 103);
+    border-radius: 1.5px;
+    font-size: larger;
+}
+
+.review-title {
+    width: 70%;
+    font-style: bold;
+    font-weight: bold;
+    margin: 1%;
+    padding: 0.5%;
+    margin-left: 1%;
+}
+
+.review-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.review-box {
+    display: flex;
+    vertical-align: middle;
+    background-color: rgb(225, 253, 240);
+    width: 80%;
+    margin: 5px;
+    padding: 5px;
+    border: 1.5px solid  rgb(42, 230, 201);
+    border-radius: 2.5px;
+}
+
+.displayname {  
+    font-weight: normal;
+/* Stylings for the html files */
+}
+
+.linkText:hover{
+    color: goldenrod;
+}
+
+/* Styling the container that posts all of the items to the screen */
+.itemList{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cartButton{                              
+    background-color: rgb(255, 251, 221);
+    border: 1.5px solid rgb(255, 235, 103);
+    border-radius: 1.5px;
+}
+
+.cartButton:hover{
+    background-color: rgb(255, 235, 103) ;
+    border-color:  rgba(255, 221, 0, 0.836);
+}
+
+.navBar{
+    background-color:  rgb(160, 255, 241);
+}
+
+.removeItem{
+    color: black;
+    font-size: small;
+}
+
+.removeItem:hover{
+    color: blue;
+}
+
+/* Styling  the container that displays a single post when screen size is at least 1200 pixels*/
+@media (min-width: 1200px)
+{
+    .item-box{
+        display: flex;
+        vertical-align: middle;
+        background-color: rgb(225, 253, 240);
+        width: 25%;
+        margin: 5px;
+        padding: 5px;
+        border: 1.5px solid  rgb(42, 230, 201);
+        border-radius: 2.5px; /* this rounds the corners of the boxes*/
+
+    }
+}
+
+/* Styling  the container that displays a single post when screen size is between 800 and 1200 pixels*/
+@media (min-width: 800px) and (max-width: 1200px)
+{
+    .item-box{
+        display: flex;
+        vertical-align: middle;
+        background-color: rgb(225, 253, 240);
+        width: 48%;
+        margin: 5px;
+        padding: 5px;
+        border: 1.5px solid  rgb(42, 230, 201);
+        border-radius: 2.5px; /* this rounds the corners of the boxes*/
+    }
+}
+
+/* Styling the container that displays a single post when screen size is less 800 pixels*/
+@media (max-width: 800px)
+{
+    .item-box{
+        display: flex;
+        vertical-align: middle;
+        background-color: rgb(225, 253, 240);
+        width: 25%;
+        margin: 5px;
+        padding: 5px;
+        border: 1.5px solid  rgb(42, 230, 201);
+        border-radius: 2.5px; /* this rounds the corners of the boxes*/
+    }
+}
